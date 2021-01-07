@@ -1,0 +1,36 @@
+<html>
+
+<head>
+
+<body>
+    <%- include('navbar') %>
+        <div class="row">
+            <div class="col-4">
+                <%- include('functionlist-m') %>
+            </div>
+            <div class="col-8 d-flex align-items-center">
+                <div class="container text-center">
+                    <h1>留存率存活率設定</h1>
+                    <form method="post" accept-charset="utf-8">
+                        <title>留存率存活率設定</title>
+                        <div class="mb-2">
+                            <label>留存率</label>
+                            <input class="form-control d-inline" type="text" name="keepRate" value="<%=data.keep_rate%>"
+                                style="width: 150px;">
+                            <label>%</label>
+                        </div>
+                        <div class="mb-2">
+                            <label>存活率</label>
+                            <input class="form-control d-inline" type="text" name="surviveRate"
+                                value="<%=data.survive_rate%>" style="width: 150px;">
+                            <label>%</label>
+                        </div>
+                        <input class="btn btn-primary" type='submit' value='儲存'>
+                    </form>
+                </div>
+            </div>
+        </div>
+</body>
+</head>
+
+</html>

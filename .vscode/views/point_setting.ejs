@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <!-- 設定介面 -->
+
+<body>
+    <%- include('navbar') %>
+        <div class="row">
+            <div class="col-4">
+                <%- include('functionlist-m') %>
+            </div>
+            <div class="col-8 d-flex align-items-center">
+                <div class="container text-center">
+                    <h1>累積點數設定</h1>
+                    <form method="post" accept-charset="utf-8">
+                        <title>累積點數設定</title>
+                        <div class="mb-2">
+                            <label>累積點數:</label>
+                            <input type="text" name="point" class="form-control d-inline" value="<%=points%>"
+                                style="width: 110px;">
+                        </div>
+                        <div class="mb-2">
+                            <label>折價金額:</label>
+                            <input type="text" name="discount" class="form-control d-inline" value="<%=dollars%>"
+                                style="width: 110px;">
+                        </div>
+                        <input type='submit' value='儲存' class="btn btn-primary">
+                    </form>
+                    <button class="btn btn-primary d-inline" onclick="location.href='custpoint'">查看顧客點數</button>
+                </div>
+            </div>
+        </div>
+</body>
+</head>
+
+</html>
