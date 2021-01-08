@@ -1,7 +1,7 @@
 const config = require('../config/development_config');
-const mysqlt = require("mysql");
+const mysql = require("mysql");
 
-const poolConnection = mysqlt.createPool({
+const poolConnection = mysql.createPool({
     connectionLimit: config.mysql.connectionLimit,
     host: config.mysql.host,
     user: config.mysql.user,
